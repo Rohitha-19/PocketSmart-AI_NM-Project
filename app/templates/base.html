@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title %}PocketSmart AI{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+  <link rel="stylesheet" href="/static/css/app-enhancements.css?v=7">
+</head>
+<header class="nav">
+  <a class="brand" href="/">PocketSmart <span>AI</span></a>
+  <nav>
+    {% if request.url.path == "/" %}
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="/login">Sign in</a>
+    <a class="btn primary" href="/register">Get started</a>
+    {% else %}
+    <a href="/dashboard">Dashboard</a>
+    <a class="planner-nav-link" href="/planner/home"{% if request.url.path == "/planner/home" %} aria-current="page"{% endif %}>Home Budget Planner</a>
+    <a class="planner-nav-link" href="/planner/party"{% if request.url.path == "/planner/party" %} aria-current="page"{% endif %}>Party Budget Planner</a>
+    <a class="planner-nav-link" href="/planner/jewelry"{% if request.url.path == "/planner/jewelry" %} aria-current="page"{% endif %}>Jewelry Budget Planner</a>
+    <a class="planner-nav-link" href="/history"{% if request.url.path == "/history" %} aria-current="page"{% endif %}>History</a>
+    <a id="authLink" href="/login">Login</a>
+    {% endif %}
+  </nav>
+</header>
+<main class="container">{% block content %}{% endblock %}</main>
+{% block footer %}{% endblock %}
+<script src="/static/js/app.js?v=2"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

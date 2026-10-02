@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Login — PocketSmart AI{% endblock %}
+{% block content %}
+<div class="auth-card card">
+<p class="eyebrow">POCKETSMART · AI-POWERED BUDGET PLANNER</p><h1>Welcome back</h1>
+<form id="loginForm">
+<label>Username<input name="username" type="text" autocomplete="username" placeholder="Enter your username" required></label>
+<label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="6" required></label>
+<div class="auth-options"><a id="forgotPasswordLink" href="#forgot-password">Forgot password?</a></div>
+<button class="btn primary" type="submit">Sign in</button>
+<p id="formMessage" class="message"></p>
+</form>
+<p class="auth-switch">Don't have an account? <a href="/register">Create account</a></p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/auth.js"></script>{% endblock %}

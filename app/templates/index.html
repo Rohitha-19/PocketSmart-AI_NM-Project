@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}PocketSmart AI — Smart Budget Assistant{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">GENAI BUDGET ASSISTANT</p>
+    <h1>Plan smarter. Spend with purpose.</h1>
+    <p class="lead">PocketSmart AI turns a budget, preferences, and optional outfit image into structured plans for home interiors, parties, and jewelry.</p>
+  </div>
+  <div class="hero-visual">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Sunlit living room with balanced furniture and warm details" fetchpriority="high">
+    <div class="hero-visual-shade"></div>
+    <div class="hero-visual-copy"><p class="eyebrow">A CLEARER WAY TO PLAN</p><h2>One budget.<br>More room to breathe.</h2></div>
+    <div class="hero-visual-note"><span class="note-mark">✦</span><span><strong>Plan with purpose</strong><small>Home · Events · Personal style</small></span></div>
+  </div>
+</section>
+<section id="features" class="landing-features">
+<div class="section-title"><div><p class="eyebrow">FEATURES</p><h2>One planner for every kind of budget</h2></div></div>
+<div class="grid three">
+  <article class="feature-card">
+    <a class="feature-image" href="/planner/home" aria-label="Explore Home Budget Planner"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Comfortable modern living room"><span>01 / HOME</span></a>
+    <div class="feature-copy"><p class="eyebrow">ROOMS &amp; FURNITURE</p><h3>Home Budget Planner</h3><p>Prioritize furniture, lighting, and room updates with a plan that fits.</p><a class="feature-link" href="/planner/home">Explore planner <span aria-hidden="true">→</span></a></div>
+  </article>
+  <article class="feature-card">
+    <a class="feature-image" href="/planner/party" aria-label="Explore Party Budget Planner"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Friends celebrating together at a dinner event"><span>02 / PARTY</span></a>
+    <div class="feature-copy"><p class="eyebrow">GUESTS &amp; OCCASIONS</p><h3>Party Budget Planner</h3><p>Bring food, venue, and celebration details together in one budget.</p><a class="feature-link" href="/planner/party">Explore planner <span aria-hidden="true">→</span></a></div>
+  </article>
+  <article class="feature-card">
+    <a class="feature-image" href="/planner/jewelry" aria-label="Explore Jewelry Budget Planner"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Gold jewelry arranged for a special occasion"><span>03 / STYLE</span></a>
+    <div class="feature-copy"><p class="eyebrow">OCCASION &amp; PERSONAL STYLE</p><h3>Jewelry Budget Planner</h3><p>Find occasion-ready jewelry and styling ideas within your budget.</p><a class="feature-link" href="/planner/jewelry">Explore planner <span aria-hidden="true">→</span></a></div>
+  </article>
+</section>
+</div>
+<section id="testimonials" class="landing-testimonials">
+  <header class="testimonials-heading">
+    <p class="eyebrow">POCKETSMART STORIES</p>
+    <h2>What our users say</h2>
+    <p>Thoughtful planning for home projects, celebrations, and personal style.</p>
+  </header>
+  <div class="testimonial-grid" aria-label="Example user stories">
+    <article class="testimonial-card">
+      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>“Seeing the home costs grouped together helped me decide what to buy first and where to stay within budget.”</blockquote>
+      <div class="testimonial-author"><span class="author-avatar">S</span><div><strong>Home planner</strong><span>Home Owner</span></div></div>
+    </article>
+    <article class="testimonial-card">
+      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>“The party plan gave me a clearer starting point for balancing food, decorations, and the guest count.”</blockquote>
+      <div class="testimonial-author"><span class="author-avatar">P</span><div><strong>Party planner</strong><span>Parent</span></div></div>
+    </article>
+    <article class="testimonial-card">
+      <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>“I could compare jewelry ideas with my occasion and budget in mind, then open shopping searches to explore。”</blockquote>
+      <div class="testimonial-author"><span class="author-avatar">J</span><div><strong>Jewelry planner</strong><span>Fashion Enthusiast</span></div></div>
+    </article>
+  </div>
+  <section class="testimonial-cta">
+    <h2>Ready to optimize your budget?</h2>
+    <p>Make a thoughtful plan for your next home project, celebration, or special occasion.</p>
+    <div class="actions"><a class="btn" href="/login">Sign in</a><a class="btn primary" href="/register">Create account</a></div>
+  </section>
+</section>
+{% endblock %}
+{% block footer %}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><a class="brand" href="/">PocketSmart <span>AI</span></a><p>Plan thoughtfully across the parts of life that matter.</p></div>
+    <div class="footer-column"><h2>Company</h2><a href="/#testimonials">Testimonials</a><a href="/#features">Features</a></div>
+    <div class="footer-column"><h2>Planners</h2><a href="/planner/home">Home</a><a href="/planner/party">Party</a><a href="/planner/jewelry">Jewelry</a></div>
+    <div class="footer-column"><h2>Account</h2><a href="/login">Sign in</a><a href="/register">Create account</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 PocketSmart AI</span><span>Prices are estimates. Verify prices and availability before purchase.</span></div>
+</footer>
+{% endblock %}

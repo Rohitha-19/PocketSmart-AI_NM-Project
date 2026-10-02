@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Party Budget Planner — PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><div><p class="eyebrow">PARTY BUDGET PLANNER</p><h1>Plan an event that fits your budget</h1><p>Shape an event plan around your guests, venue, and priorities.</p></div></section>
+<form id="partyForm" class="planner-form">
+<section class="form-section"><h2>Basic Information</h2><div class="form-grid">
+	<label>Total Budget (₹)<input name="budget" type="number" min="1" step="1" placeholder="e.g. 50,000" required></label>
+	<label>Number of Guests<input name="guests" type="number" min="1" max="10000" placeholder="e.g. 50" required></label>
+</div></section>
+<section class="form-section"><h2>Event Details</h2><div class="form-grid">
+	<label>Party Type<select name="event_type"><option>Birthday</option><option>Wedding</option><option>Anniversary</option><option>Graduation</option><option>Corporate</option></select></label>
+	<label>Venue Type<select name="venue_type"><option>Home</option><option>Event Hall</option><option>Outdoor</option><option>Restaurant</option></select></label>
+</div></section>
+<section class="form-section"><h2>Party Needs</h2><div class="choice-row">
+	<label class="choice"><input type="checkbox" name="needs" value="Catering" checked>Catering</label>
+	<label class="choice"><input type="checkbox" name="needs" value="Decoration" checked>Decoration</label>
+	<label class="choice"><input type="checkbox" name="needs" value="Entertainment" checked>Entertainment</label>
+</div></section>
+<section class="form-section"><h2>Additional Requirements</h2><label>Special requests<textarea name="special_requests" rows="4" placeholder="Themes, dietary restrictions, or other requests"></textarea></label></section>
+<div class="form-actions"><button class="btn primary" type="submit">Generate Budget Plan</button><span id="status" class="message" aria-live="polite"></span></div>
+</form>
+<div id="results" aria-live="polite"></div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/planners.js"></script><script>initPartyPlanner()</script>{% endblock %}

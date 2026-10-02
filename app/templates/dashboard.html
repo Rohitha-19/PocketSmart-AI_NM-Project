@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><div><p class="eyebrow">DASHBOARD</p><h1>Your planning workspace</h1><p id="welcome">Loading...</p></div><button class="btn" onclick="logout()">Logout</button></section>
+<div class="grid three">
+<article class="planner-card card">
+	<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Bright living room with considered furniture">
+	<div class="planner-card-content"><p class="eyebrow">ROOMS & FURNITURE</p><h2>Home Budget Planner</h2><p>Plan fixtures, furniture, and rooms within one clear budget.</p><a class="btn primary" href="/planner/home">Get started</a></div>
+</article>
+<article class="planner-card card">
+	<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Guests gathered for a celebration">
+	<div class="planner-card-content"><p class="eyebrow">GUESTS & EVENT NEEDS</p><h2>Party Budget Planner</h2><p>Balance catering, decoration, entertainment, and venue costs.</p><a class="btn primary" href="/planner/party">Get started</a></div>
+</article>
+<article class="planner-card card">
+	<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Gold jewelry arranged for styling">
+	<div class="planner-card-content"><p class="eyebrow">OCCASION & PERSONAL STYLE</p><h2>Jewelry Budget Planner</h2><p>Explore occasion-ready jewelry options that fit your budget.</p><a class="btn primary" href="/planner/jewelry">Get started</a></div>
+</article>
+</div>
+<section class="activity-section"><div class="section-title"><div><p class="eyebrow">YOUR ACTIVITY</p><h2>Recent recommendations</h2></div><a href="/history">View all history</a><span id="count"></span></div><div id="history" class="history"></div></section>
+{% endblock %}
+{% block scripts %}<script src="/static/js/dashboard.js"></script>{% endblock %}

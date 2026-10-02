@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Jewelry Budget Planner — PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><div><p class="eyebrow">JEWELRY BUDGET PLANNER</p><h1>Find a look for your occasion</h1><p>Get jewelry recommendations shaped by your budget and personal style.</p></div></section>
+<form id="jewelryForm" class="planner-form" enctype="multipart/form-data">
+<section class="form-section"><h2>Budget Details</h2><div class="form-grid"><label>Total Budget (₹)<input name="budget" type="number" min="1" step="1" placeholder="e.g. 5,000" required></label></div></section>
+<section class="form-section"><h2>Occasion &amp; Preferences</h2><div class="form-grid">
+	<label>Occasion<select name="occasion"><option>Birthday</option><option>Wedding</option><option>Anniversary</option><option>Graduation</option><option>Office Event</option><option>Casual</option></select></label>
+	<label>Metal Preference<select name="metal"><option>Any</option><option>Gold</option><option>Silver</option><option>Rose Gold</option></select></label>
+	<label class="wide">Style Preferences<textarea name="style_preferences" rows="4" placeholder="Describe your style preferences, materials, colors, etc."></textarea></label>
+</div></section>
+<section class="form-section"><h2>Upload Outfit Image</h2><div class="upload-row"><label>Choose an image<input id="outfitImage" name="image" type="file" accept="image/jpeg,image/png,image/webp"></label></div><div id="outfitPreviewWrap" class="outfit-preview-wrap" hidden><img id="outfitPreview" class="outfit-preview" alt="Preview of selected outfit"><button id="removeImage" class="btn" type="button">Remove image</button></div></section>
+<div class="form-actions"><button class="btn primary" type="submit">Generate Budget Plan</button><span id="status" class="message" aria-live="polite"></span></div>
+</form>
+<div id="results" aria-live="polite"></div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/planners.js?v=2"></script><script>initJewelryPlanner()</script>{% endblock %}

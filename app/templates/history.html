@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Recommendation History — PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><div><p class="eyebrow">SAVED ACTIVITY</p><h1>Your recommendation history</h1><p>Review budgets and recommendations from your previous plans.</p></div><a class="btn" href="/dashboard">Back to dashboard</a></section>
+<section class="history-page"><div id="historyList" class="history-list" aria-live="polite"><p class="empty-state">Loading recommendations...</p></div></section>
+{% endblock %}
+{% block scripts %}<script src="/static/js/history.js"></script>{% endblock %}

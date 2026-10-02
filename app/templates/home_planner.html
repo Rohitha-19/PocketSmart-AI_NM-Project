@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home Budget Planner — PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><div><p class="eyebrow">HOME BUDGET PLANNER</p><h1>Make your home budget go further</h1><p>Set your budget, choose the rooms, and tell us what you need.</p></div></section>
+<form id="homeForm" class="planner-form">
+<section class="form-section"><h2>Budget Details</h2><div class="form-grid"><label>Total Budget (₹)<input name="budget" type="number" min="1" step="1" placeholder="e.g. 50,000" required></label></div></section>
+<section class="form-section"><h2>Fixtures &amp; Furniture</h2><div class="form-grid">
+	<label>Number of Lights / Fixtures<input name="lights" type="number" min="0" max="50" value="0" required></label>
+	<label>Number of Ceiling Fans<input name="fans" type="number" min="0" max="50" value="0" required></label>
+	<label>Number of Furniture Pieces<input name="furniture" type="number" min="0" max="50" value="0" required></label>
+	<label>Number of Dining Tables<input name="tables" type="number" min="0" max="50" value="0" required></label>
+</div></section>
+<section class="form-section"><h2>Rooms to Include</h2><div class="choice-row">
+	<label class="choice"><input type="checkbox" name="rooms" value="Living Room">Living Room</label>
+	<label class="choice"><input type="checkbox" name="rooms" value="Kitchen">Kitchen</label>
+	<label class="choice"><input type="checkbox" name="rooms" value="Bedroom">Bedroom</label>
+</div></section>
+<section class="form-section"><h2>Additional Information</h2><label>Special Requirements or Preferences<textarea name="special_requirements" rows="4" placeholder="Any specific requirements or preferences"></textarea></label></section>
+<div class="form-actions"><button class="btn primary" type="submit">Generate Budget Plan</button><span id="status" class="message" aria-live="polite"></span></div>
+</form>
+<div id="results" aria-live="polite"></div>
+{% endblock %}
+{% block scripts %}<script src="/static/js/planners.js"></script><script>initHomePlanner()</script>{% endblock %}
