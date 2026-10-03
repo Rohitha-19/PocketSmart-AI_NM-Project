@@ -2,7 +2,7 @@
 
 ## 👥 Project Team Details
 
-| Attribute | Details |
+| Team Information | Details |
 | :--- | :--- |
 | **Team ID** | `SWTID-2026-6545` |
 | **Project Name** | PocketSmart AI - Your Smart Budget & Recommendation Assistant|
