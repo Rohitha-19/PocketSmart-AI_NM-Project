@@ -1,4 +1,13 @@
-# PocketSmart AI
+# PocketSmart AI - Your Smart Budget and Recommendation Assistant 
+
+## 👥 Project Team Details
+
+| Attribute | Details |
+| :--- | :--- |
+| **Team ID** | `SWTID-2026-6545` |
+| **Project Name** | PocketSmart AI - Your Smart Budget & Recommendation Assistant|
+| **Team Leader** | **ROHITHA V** |
+| **Team Members** | • **SANDHIYA R**<br>• **PRIYANKA G**<br>• **NIVETHA D** |
 
 PocketSmart AI is a complete FastAPI + Jinja2 + SQLite application based on the supplied project documentation. It provides:
 
