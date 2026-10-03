@@ -189,3 +189,7 @@ PocketSmart-AI/
 ├── requirements.txt
 └── README.md
 ```
+## 🔗 Project Links
+
+- **GitHub Repository:** [View Source Code](https://github.com/Rohitha-19/PocketSmart-AI_NM-Project)
+- **Demo Video:** [Watch Project Demo](https://drive.google.com/drive/folders/15py1MV06ZY8_-cG_r9_0pC2kU9ps8Dub)
