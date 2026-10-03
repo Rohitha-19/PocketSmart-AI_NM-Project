@@ -5,7 +5,7 @@
 | Team Information | Details |
 | :--- | :--- |
 | **Team ID** | `SWTID-2026-6545` |
-| **Project Name** | PocketSmart AI - Your Smart Budget & Recommendation Assistant|
+| **Project Title** | PocketSmart AI - Your Smart Budget & Recommendation Assistant|
 | **Team Leader** | **ROHITHA V** |
 | **Team Members** | • **SANDHIYA R**<br>• **PRIYANKA G**<br>• **NIVETHA D** |
 
